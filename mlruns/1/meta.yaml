@@ -1,4 +1,0 @@
-artifact_location: file:///C:/Users/shree/projects/ML_Monitoring/Feature_importance_weighted_drift_detection_and_automated_retraining/mlruns/1
-experiment_id: '1'
-lifecycle_stage: active
-name: warehouse_demand_forecasting
