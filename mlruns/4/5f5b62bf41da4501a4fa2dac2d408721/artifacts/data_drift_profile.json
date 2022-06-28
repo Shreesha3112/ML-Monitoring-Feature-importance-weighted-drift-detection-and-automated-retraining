@@ -1,0 +1,472 @@
+{
+  "data_drift": {
+    "name": "data_drift",
+    "datetime": "2022-06-28 10:48:33.631915",
+    "data": {
+      "utility_columns": {
+        "date": null,
+        "id": "ID",
+        "target": null,
+        "prediction": null
+      },
+      "cat_feature_names": [
+        "warehouse_ID.value",
+        "Product_Type.value",
+        "is_weekend.value",
+        "is_warehouse_closed.value",
+        "state.value",
+        "day_of_week.value",
+        "is_holiday.value",
+        "county.value"
+      ],
+      "num_feature_names": [
+        "date.value",
+        "month.value",
+        "year.value"
+      ],
+      "datetime_feature_names": [],
+      "target_names": null,
+      "options": {
+        "confidence": null,
+        "drift_share": 0.5,
+        "nbinsx": 10,
+        "xbins": null
+      },
+      "metrics": {
+        "n_features": 11,
+        "n_drifted_features": 7,
+        "share_drifted_features": 0.6363636363636364,
+        "dataset_drift": true,
+        "date.value": {
+          "current_small_hist": [
+            [
+              1.604938271604938e-16,
+              1.2962962962962962e-16,
+              1.697530864197531e-16,
+              1.419753086419753e-16,
+              1.6666666666666668e-16,
+              1.4506172839506172e-16,
+              1.604938271604938e-16,
+              1.5123456790123459e-16,
+              1.6358024691358025e-16,
+              1.54320987654321e-16
+            ],
+            [
+              1.539648e+18,
+              1.540296e+18,
+              1.540944e+18,
+              1.541592e+18,
+              1.54224e+18,
+              1.542888e+18,
+              1.543536e+18,
+              1.544184e+18,
+              1.544832e+18,
+              1.54548e+18,
+              1.546128e+18
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              9.971509971509972e-18,
+              7.122507122507122e-18,
+              8.547008547008547e-18,
+              7.122507122507122e-18,
+              6.41025641025641e-18,
+              1.7806267806267808e-17,
+              2.3148148148148148e-17,
+              2.6353276353276352e-17,
+              3.3831908831908834e-17,
+              3.7749287749287746e-17
+            ],
+            [
+              1.483488e+18,
+              1.489104e+18,
+              1.49472e+18,
+              1.500336e+18,
+              1.505952e+18,
+              1.511568e+18,
+              1.517184e+18,
+              1.5228e+18,
+              1.528416e+18,
+              1.534032e+18,
+              1.539648e+18
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "K-S p_value",
+          "drift_score": 7.399507995628047e-297,
+          "drift_detected": true
+        },
+        "month.value": {
+          "current_small_hist": [
+            [
+              1.0100000000000036,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.010000000000007,
+              0.0,
+              0.0,
+              0.0,
+              1.980000000000007
+            ],
+            [
+              10.0,
+              10.2,
+              10.4,
+              10.6,
+              10.8,
+              11.0,
+              11.2,
+              11.4,
+              11.6,
+              11.8,
+              12.0
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              0.17454545454545453,
+              0.06909090909090908,
+              0.07999999999999996,
+              0.07636363636363638,
+              0.09818181818181822,
+              0.1054545454545454,
+              0.10727272727272723,
+              0.09636363636363639,
+              0.0690909090909091,
+              0.032727272727272744
+            ],
+            [
+              1.0,
+              2.1,
+              3.2,
+              4.300000000000001,
+              5.4,
+              6.5,
+              7.6000000000000005,
+              8.700000000000001,
+              9.8,
+              10.9,
+              12.0
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "K-S p_value",
+          "drift_score": 2.1666679423578167e-207,
+          "drift_detected": true
+        },
+        "year.value": {
+          "current_small_hist": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              10.000000000009095,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2017.5,
+              2017.6,
+              2017.7,
+              2017.8,
+              2017.9,
+              2018.0,
+              2018.1,
+              2018.2,
+              2018.3,
+              2018.4,
+              2018.5
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              2.4600000000022373,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              7.540000000006858
+            ],
+            [
+              2017.0,
+              2017.1,
+              2017.2,
+              2017.3,
+              2017.4,
+              2017.5,
+              2017.6,
+              2017.7,
+              2017.8,
+              2017.9,
+              2018.0
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 0.0,
+          "drift_detected": true
+        },
+        "warehouse_ID.value": {
+          "current_small_hist": [
+            [
+              125,
+              130,
+              122,
+              123
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              177,
+              176,
+              92,
+              55
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 7.400551106327891e-18,
+          "drift_detected": true
+        },
+        "Product_Type.value": {
+          "current_small_hist": [
+            [
+              254,
+              246
+            ],
+            [
+              0.3154974946313529,
+              0.8154974946313529
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              321,
+              179
+            ],
+            [
+              0.3154974946313529,
+              0.8154974946313529
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 1.8196544678605875e-05,
+          "drift_detected": true
+        },
+        "is_weekend.value": {
+          "current_small_hist": [
+            [
+              355,
+              145
+            ],
+            [
+              0.35719398711524697,
+              0.857193987115247
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              354,
+              146
+            ],
+            [
+              0.35719398711524697,
+              0.857193987115247
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 0.9444965811697097,
+          "drift_detected": false
+        },
+        "is_warehouse_closed.value": {
+          "current_small_hist": [
+            [
+              500
+            ],
+            [
+              0.5
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              500
+            ],
+            [
+              0.5
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 1,
+          "drift_detected": false
+        },
+        "state.value": {
+          "current_small_hist": [
+            [
+              125,
+              130,
+              122,
+              123
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              177,
+              176,
+              92,
+              55
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 7.400551106327891e-18,
+          "drift_detected": true
+        },
+        "day_of_week.value": {
+          "current_small_hist": [
+            [
+              69,
+              68,
+              70,
+              75,
+              73,
+              76,
+              69
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              87,
+              67,
+              65,
+              72,
+              63,
+              74,
+              72
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 0.34552053985145154,
+          "drift_detected": false
+        },
+        "is_holiday.value": {
+          "current_small_hist": [
+            [
+              473,
+              27
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              485,
+              15
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 0.05851843154456993,
+          "drift_detected": false
+        },
+        "county.value": {
+          "current_small_hist": [
+            [
+              125,
+              130,
+              122,
+              123
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              177,
+              176,
+              92,
+              55
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 7.400551106327891e-18,
+          "drift_detected": true
+        }
+      }
+    }
+  },
+  "timestamp": "2022-06-28 10:48:33.631915"
+}

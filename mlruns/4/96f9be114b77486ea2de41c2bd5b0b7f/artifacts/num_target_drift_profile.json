@@ -1,0 +1,57 @@
+{
+  "num_target_drift": {
+    "name": "num_target_drift",
+    "datetime": "2022-06-28 10:46:36.909658",
+    "data": {
+      "utility_columns": {
+        "date": null,
+        "id": "ID",
+        "target": "daily_dispatch_count",
+        "prediction": null
+      },
+      "cat_feature_names": [
+        "warehouse_ID.value",
+        "Product_Type.value",
+        "is_weekend.value",
+        "is_warehouse_closed.value",
+        "state.value",
+        "day_of_week.value",
+        "is_holiday.value",
+        "county.value"
+      ],
+      "num_feature_names": [
+        "Latitude.value",
+        "Longitude.value",
+        "date.value",
+        "month.value",
+        "year.value"
+      ],
+      "datetime_feature_names": [],
+      "target_names": null,
+      "metrics": {
+        "target_name": "daily_dispatch_count",
+        "target_type": "num",
+        "target_drift": 4.062765643181667e-106,
+        "target_correlations": {
+          "current": {
+            "Latitude.value": -0.09299808485406032,
+            "Longitude.value": -0.2009357840578823,
+            "date.value": -0.20570950221804465,
+            "month.value": -0.19795616839869407,
+            "year.value": NaN,
+            "daily_dispatch_count": 1.0
+          },
+          "reference": {
+            "Latitude.value": -0.02375506696896885,
+            "Longitude.value": -0.282405087391565,
+            "date.value": -0.2664224258136378,
+            "month.value": 0.12579972658601601,
+            "year.value": -0.35626082130256664,
+            "daily_dispatch_count": 1.0
+          }
+        }
+      }
+    }
+  },
+  "timestamp": "2022-06-28 10:46:36.909658"
+}

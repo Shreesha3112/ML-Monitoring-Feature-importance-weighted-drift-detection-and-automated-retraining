@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/shree/projects/ML_Monitoring/Feature_importance_weighted_drift_detection_and_automated_retraining/mlruns/4
+experiment_id: '4'
+lifecycle_stage: active
+name: mlflow drift detection test

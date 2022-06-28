@@ -1,0 +1,111 @@
+{
+  "num_target_drift": {
+    "name": "num_target_drift",
+    "datetime": "2022-06-28 10:45:01.028062",
+    "data": {
+      "utility_columns": {
+        "date": null,
+        "id": "ID",
+        "target": "daily_dispatch_count",
+        "prediction": null
+      },
+      "cat_feature_names": [
+        "warehouse_ID.value",
+        "Product_Type.value",
+        "is_weekend.value",
+        "is_warehouse_closed.value",
+        "state.value",
+        "day_of_week.value",
+        "is_holiday.value",
+        "county.value"
+      ],
+      "num_feature_names": [
+        "Latitude.value",
+        "Longitude.value",
+        "county_cases.value",
+        "county_deaths.value",
+        "date.value",
+        "days_since_warehouse_started.value",
+        "geographic_region_division.value",
+        "month.value",
+        "monthly_count.value",
+        "state_abbr.value",
+        "state_cases.value",
+        "state_deaths.value",
+        "statewise_geographic_region.value",
+        "statewise_land_area_per_sqmile.value",
+        "statewise_median_age.value",
+        "statewise_median_household_income.value",
+        "statewise_population.value",
+        "statewise_population_per_sqmile.value",
+        "total_count.value",
+        "week.value",
+        "weekly_count.value",
+        "year.value",
+        "yearly_count.value"
+      ],
+      "datetime_feature_names": [],
+      "target_names": null,
+      "metrics": {
+        "target_name": "daily_dispatch_count",
+        "target_type": "num",
+        "target_drift": 2.7107414318065633e-101,
+        "target_correlations": {
+          "current": {
+            "Latitude.value": -0.09358667015834585,
+            "Longitude.value": -0.15112835247952805,
+            "county_cases.value": NaN,
+            "county_deaths.value": NaN,
+            "date.value": -0.167370511941247,
+            "days_since_warehouse_started.value": -0.04676776758162806,
+            "geographic_region_division.value": -0.09517286128286716,
+            "month.value": -0.16742797936397208,
+            "monthly_count.value": 0.021370016245708404,
+            "state_abbr.value": 0.10006131819415183,
+            "state_cases.value": NaN,
+            "state_deaths.value": NaN,
+            "statewise_geographic_region.value": -0.09517286128286716,
+            "statewise_land_area_per_sqmile.value": 0.1546996120096998,
+            "statewise_median_age.value": -0.17419301385011027,
+            "statewise_median_household_income.value": -0.14220942354694646,
+            "statewise_population.value": 0.056371537210968665,
+            "statewise_population_per_sqmile.value": -0.16044613373061678,
+            "total_count.value": 0.39091165327110095,
+            "week.value": -0.16423588231406241,
+            "weekly_count.value": -0.03509645080983686,
+            "year.value": NaN,
+            "yearly_count.value": -0.07238115230360849,
+            "daily_dispatch_count": 1.0
+          },
+          "reference": {
+            "Latitude.value": 0.029254286221682645,
+            "Longitude.value": -0.1292467279958857,
+            "county_cases.value": NaN,
+            "county_deaths.value": NaN,
+            "date.value": -0.08555276021714155,
+            "days_since_warehouse_started.value": 0.018278326215857215,
+            "geographic_region_division.value": -0.18895073522724762,
+            "month.value": 0.21247249823530553,
+            "monthly_count.value": 0.22566693079737668,
+            "state_abbr.value": -0.02396255305767782,
+            "state_cases.value": NaN,
+            "state_deaths.value": NaN,
+            "statewise_geographic_region.value": -0.18895073522724762,
+            "statewise_land_area_per_sqmile.value": 0.12540123301907638,
+            "statewise_median_age.value": -0.13071783203272413,
+            "statewise_median_household_income.value": -0.037048168130933264,
+            "statewise_population.value": 0.18206555078264067,
+            "statewise_population_per_sqmile.value": -0.06144532491053887,
+            "total_count.value": 0.5176018302280772,
+            "week.value": 0.2288077956148601,
+            "weekly_count.value": 0.22652242987971086,
+            "year.value": -0.22038858638853862,
+            "yearly_count.value": 0.30515094882367616,
+            "daily_dispatch_count": 1.0
+          }
+        }
+      }
+    }
+  },
+  "timestamp": "2022-06-28 10:45:01.028062"
+}

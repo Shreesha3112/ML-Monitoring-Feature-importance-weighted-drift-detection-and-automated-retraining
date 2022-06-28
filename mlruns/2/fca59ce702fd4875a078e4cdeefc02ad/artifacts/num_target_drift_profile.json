@@ -1,0 +1,51 @@
+{
+  "num_target_drift": {
+    "name": "num_target_drift",
+    "datetime": "2022-06-28 10:02:49.657690",
+    "data": {
+      "utility_columns": {
+        "date": null,
+        "id": "ID",
+        "target": "daily_dispatch_count",
+        "prediction": null
+      },
+      "cat_feature_names": [
+        "warehouse_ID.value",
+        "Product_Type.value",
+        "is_weekend.value",
+        "is_warehouse_closed.value",
+        "state.value",
+        "day_of_week.value",
+        "is_holiday.value",
+        "county.value"
+      ],
+      "num_feature_names": [
+        "state_cases.value",
+        "state_deaths.value",
+        "statewise_population_per_sqmile.value"
+      ],
+      "datetime_feature_names": [],
+      "target_names": null,
+      "metrics": {
+        "target_name": "daily_dispatch_count",
+        "target_type": "num",
+        "target_drift": 1.1895228689385215,
+        "target_correlations": {
+          "current": {
+            "state_cases.value": -0.24029098621541484,
+            "state_deaths.value": -0.2381215036823095,
+            "statewise_population_per_sqmile.value": -0.23230370859970287,
+            "daily_dispatch_count": 1.0
+          },
+          "reference": {
+            "state_cases.value": NaN,
+            "state_deaths.value": NaN,
+            "statewise_population_per_sqmile.value": -0.20522120925908888,
+            "daily_dispatch_count": 1.0
+          }
+        }
+      }
+    }
+  },
+  "timestamp": "2022-06-28 10:02:49.657690"
+}
