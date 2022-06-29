@@ -1,0 +1,472 @@
+{
+  "data_drift": {
+    "name": "data_drift",
+    "datetime": "2022-06-29 11:02:33.450996",
+    "data": {
+      "utility_columns": {
+        "date": null,
+        "id": "ID",
+        "target": null,
+        "prediction": null
+      },
+      "cat_feature_names": [
+        "warehouse_ID.value",
+        "Product_Type.value",
+        "is_weekend.value",
+        "is_warehouse_closed.value",
+        "state.value",
+        "day_of_week.value",
+        "is_holiday.value",
+        "county.value"
+      ],
+      "num_feature_names": [
+        "state_cases.value",
+        "state_deaths.value",
+        "statewise_population_per_sqmile.value"
+      ],
+      "datetime_feature_names": [],
+      "target_names": null,
+      "options": {
+        "confidence": null,
+        "drift_share": 0.5,
+        "nbinsx": 10,
+        "xbins": null
+      },
+      "metrics": {
+        "n_features": 11,
+        "n_drifted_features": 5,
+        "share_drifted_features": 0.45454545454545453,
+        "dataset_drift": false,
+        "state_cases.value": {
+          "current_small_hist": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              9.999999999999991,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              -0.4,
+              -0.3,
+              -0.19999999999999996,
+              -0.09999999999999998,
+              0.0,
+              0.10000000000000009,
+              0.20000000000000007,
+              0.30000000000000004,
+              0.4,
+              0.5
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              9.999999999999991,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              -0.4,
+              -0.3,
+              -0.19999999999999996,
+              -0.09999999999999998,
+              0.0,
+              0.10000000000000009,
+              0.20000000000000007,
+              0.30000000000000004,
+              0.4,
+              0.5
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 1,
+          "drift_detected": false
+        },
+        "state_deaths.value": {
+          "current_small_hist": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              9.999999999999991,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              -0.4,
+              -0.3,
+              -0.19999999999999996,
+              -0.09999999999999998,
+              0.0,
+              0.10000000000000009,
+              0.20000000000000007,
+              0.30000000000000004,
+              0.4,
+              0.5
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              9.999999999999991,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.5,
+              -0.4,
+              -0.3,
+              -0.19999999999999996,
+              -0.09999999999999998,
+              0.0,
+              0.10000000000000009,
+              0.20000000000000007,
+              0.30000000000000004,
+              0.4,
+              0.5
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 1,
+          "drift_detected": false
+        },
+        "statewise_population_per_sqmile.value": {
+          "current_small_hist": [
+            [
+              0.010435086006451554,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.003187741678211047
+            ],
+            [
+              10.660025668871556,
+              84.06622467158374,
+              157.47242367429592,
+              230.8786226770081,
+              304.2848216797203,
+              377.6910206824325,
+              451.0972196851447,
+              524.5034186878569,
+              597.909617690569,
+              671.3158166932811,
+              744.7220156959934
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              0.008963820616507993,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0046590070681546076
+            ],
+            [
+              10.660025668871556,
+              84.06622467158374,
+              157.47242367429592,
+              230.8786226770081,
+              304.2848216797203,
+              377.6910206824325,
+              451.0972196851447,
+              524.5034186878569,
+              597.909617690569,
+              671.3158166932811,
+              744.7220156959934
+            ]
+          ],
+          "feature_type": "num",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 2.1994752167153156e-17,
+          "drift_detected": true
+        },
+        "warehouse_ID.value": {
+          "current_small_hist": [
+            [
+              117,
+              125,
+              129,
+              129
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              171,
+              169,
+              94,
+              66
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 2.1994752167153156e-17,
+          "drift_detected": true
+        },
+        "Product_Type.value": {
+          "current_small_hist": [
+            [
+              246,
+              254
+            ],
+            [
+              0.3154974946313529,
+              0.8154974946313529
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              324,
+              176
+            ],
+            [
+              0.3154974946313529,
+              0.8154974946313529
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 6.285873708211653e-07,
+          "drift_detected": true
+        },
+        "is_weekend.value": {
+          "current_small_hist": [
+            [
+              358,
+              142
+            ],
+            [
+              0.35719398711524697,
+              0.857193987115247
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              360,
+              140
+            ],
+            [
+              0.35719398711524697,
+              0.857193987115247
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 0.8882222875608787,
+          "drift_detected": false
+        },
+        "is_warehouse_closed.value": {
+          "current_small_hist": [
+            [
+              500
+            ],
+            [
+              0.5
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              500
+            ],
+            [
+              0.5
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 1,
+          "drift_detected": false
+        },
+        "state.value": {
+          "current_small_hist": [
+            [
+              117,
+              125,
+              129,
+              129
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              171,
+              169,
+              94,
+              66
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 2.1994752167153156e-17,
+          "drift_detected": true
+        },
+        "day_of_week.value": {
+          "current_small_hist": [
+            [
+              66,
+              72,
+              73,
+              73,
+              74,
+              73,
+              69
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              75,
+              70,
+              71,
+              89,
+              55,
+              63,
+              77
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 0.061518579206940205,
+          "drift_detected": false
+        },
+        "is_holiday.value": {
+          "current_small_hist": [
+            [
+              477,
+              23
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              485,
+              15
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "Z-test p_value",
+          "drift_score": 0.18578390789927113,
+          "drift_detected": false
+        },
+        "county.value": {
+          "current_small_hist": [
+            [
+              117,
+              125,
+              129,
+              129
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "ref_small_hist": [
+            [
+              171,
+              169,
+              94,
+              66
+            ],
+            [
+              0.16857551896921977,
+              0.5057265569076593,
+              0.7773801002147459,
+              0.9402290622763065
+            ]
+          ],
+          "feature_type": "cat",
+          "stattest_name": "chi-square p_value",
+          "drift_score": 2.1994752167153156e-17,
+          "drift_detected": true
+        }
+      }
+    }
+  },
+  "timestamp": "2022-06-29 11:02:33.450996"
+}
