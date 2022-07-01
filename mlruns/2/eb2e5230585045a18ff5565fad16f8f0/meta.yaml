@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/shree/projects/ML_Monitoring/Feature_importance_weighted_drift_detection_and_automated_retraining/mlruns/2/eb2e5230585045a18ff5565fad16f8f0/artifacts
+end_time: 1656602606185
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: eb2e5230585045a18ff5565fad16f8f0
+run_uuid: eb2e5230585045a18ff5565fad16f8f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656602603803
+status: 3
+tags: []
+user_id: shree
