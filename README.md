@@ -7,8 +7,6 @@ Every model over time is impacted by model performance decay due to data drift a
 ## Dataset:
 
 * Contains warehouse demand data from 2017-01-01 to 2020-11-15
-* Working with preprocessed data
-* No data leakage as missing values were filled without requirement of any transformation
 
 ## Assumptions
 
@@ -16,6 +14,21 @@ Every model over time is impacted by model performance decay due to data drift a
 * True labels/ actual demand available over the weekend
 * Model monitored on weekly basis
 
+## How feature importance weighted data drift is calculated?
+
+
+### get drift scores provided train and production data
+
+
+##### drift detected without feature importance wightage for these features - statewise_population_per_sqmile.value, warehouse_ID.value, Product_Type.value, state.value, county.value	
+
+### Obtain feature importance
+
+### Convert raw feature importance to relative feature importance based on the most important feature for the model
+
+### Calculate feature importance weighted drift score by combining relative feature importance with drift score. Based on p-value obtain updated drift detected columns
 
 
 
+##### drift detected with feature importance wightage for these features - statewise_population_per_sqmile.value, warehouse_ID.value, Product_Type.value	
+<b>state.value and county.value are not detected because of high feature importance weighted p_value</b>
