@@ -31,11 +31,23 @@ drift detected without feature importance wightage for these features - statewis
 
 
 drift detected with feature importance wightage for these features - statewise_population_per_sqmile.value, warehouse_ID.value, Product_Type.value(3 features)<br/>	
-<b>state.value and county.value are not detected because of high feature importance weighted p_value. Number of columns</b>
+<b>state.value and county.value are not detected because of high feature importance weighted p_value.</b>
+
+### Distribution density comparision for drift detected features
+![warehouse ID distribution](drift_detection_screen_shots/warehouse_id_distribution.png)
+![Product Type distribution](drift_detection_screen_shots/product_type_distribution.png)
+![Statewise population per sqmile distribution](drift_detection_screen_shots/statewise_populatio_per_sqmile_distrubtion.png)
+
 
 ### Monthly drift detection simulation from Mar 2019 to Nov 2020
-[Feature importance weighted drift table](plots/Product_Type_drift_detection_plots.html)
+#### Drift in warehouse ID
+![Drift in warehouse ID](drift_detection_screen_shots/drift_in_warehouse_id.png)
 
+#### Drift in Product Type
+![Drift in Product Type](drift_detection_screen_shots/drift_in_product_type.png)
+
+#### Drift in covid cases per state
+![Drift in covid cases per state](drift_detection_screen_shots/drift_in_covid_deaths_per_state.png)
 
 ### Improvements
 
